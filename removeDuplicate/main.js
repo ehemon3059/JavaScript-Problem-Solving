@@ -6,14 +6,18 @@ const friends = ['Emon','korim','sunny','sunny','eMon','korim','Emu'];
 function removeDuplicate(names){
     //make an empty array
     const friendsName = [];
-    //create a loop to separet name
+    const fakeName = [];
+    //create a loop to separate name
     for(let i = 0; i<names.length; i++){
         const name = names[i].toUpperCase();
     
         if(friendsName.includes(name) === false){
             //name push on friendsName Array
             friendsName.push(name)
+        }else{
+            fakeName.push(name)
         }
+        
 
     }
     return friendsName;
